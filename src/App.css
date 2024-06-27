@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-backgorund-color: #0d0d0d;
+  --secondry-backgorund-color: #282828;
+  --text-color: #c8c8c8;
+  --primary-text-color: #0d0d0d;
+  --secondry-text-color: #6b6b6b;
+  --heading-color: linear-gradient(
+    90deg,
+    #b07908 6.94%,
+    #d0ab3c 38.36%,
+    #ead467 67.83%,
+    #f4e478 82.8%
+  );
+  --secondry-heading-color: #fdfdfd;
+  --shadow-color: linear-gradient(
+    90deg,
+    #b07908 6.94%,
+    #d0ab3c 38.36%,
+    #ead467 67.83%,
+    #f4e478 82.8%
+  );
+
+  --button-primary-color: linear-gradient(
+      90deg,
+      #b07908 6.94%,
+      #d0ab3c 38.36%,
+      #ead467 67.83%,
+      #f4e478 82.8%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  --background-shadow: linear-gradient(
+    90deg,
+    rgba(176, 121, 8, 0.1) 6.94%,
+    /* Reduced opacity for #b07908 */ rgba(208, 171, 60, 0.1) 38.36%,
+    /* Reduced opacity for #d0ab3c */ rgba(234, 212, 103, 0.1) 67.83%,
+    /* Reduced opacity for #ead467 */ rgba(244, 228, 120, 0.1) 82.8%
+      /* Reduced opacity for #f4e478 */
+  );
+}
+body {
+  background-color: #0d0d0d;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+.primary_button {
+  color: #fff;
+  background: var(--button-primary-color);
+  font-family: "Roboto", sans-serif;
+}
+.secondry_button {
+  color: var(--text-color);
+  background: #c3a70b;
+  font-family: "Roboto", sans-serif;
+}
+.active_nav {
+  color: blue;
+}
+.pending {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.shadow {
+  border-bottom: 1px solid var(--shadow-color);
+}
+.mainNav {
+  position: sticky;
+  top: 0;
+}
+.goldCard {
+  background: linear-gradient(
+    180deg,
+    rgba(208, 180, 24, 0.9) 0%,
+    rgba(0, 0, 0, 0) 77.35%
+  );
+}
+.goldColor {
+  background: var(--shadow-color);
+}
+.goldGredientColor {
+  color: var(--shadow-color);
+}
+.text {
+  -webkit-text-stroke-width: 0.5px; /* Width of the outline */
+  -webkit-text-stroke-color: #fff; /* Color of the outline */
+  color: transparent;
+}
+.linear_text {
+  background: var(--shadow-color);
+  /* Define the linear gradient */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  color: transparent; /* Make the text color transparent */
+}
+.backgroundShadow {
+  background: var(--background-shadow);
+  backdrop-filter: blur(10px);
+}
+.Shadow {
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+.boxShadow {
+  /* box-shadow: 0px 0px 0px 0px #b07908, 0px 0px 0px -18px #d0ab3c,
+    0px 0px 6px 0px #ead467, 0px 0px 26px 0px #f4e478,
+    0px -3px 2px 1px rgba(0, 0, 255, 0.05);
+  backdrop-filter: blur(10px); */
+  box-shadow: 0px 2px 4px rgba(195, 167, 11, 0.15);
+}
+.button_hide {
+  display: none;
+  transition: display 1s ease-in-out;
+}
+.blog_slider_card:hover .button_hide {
+  display: block;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; */
+
+/* Center slide text vertically */
+/* display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide-active {
+  width: 30% !important;
+}
+
+.swiper-slide {
+  width: 21%;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+}
+
+.swiper-slide-prev {
+  width: 21% !important;
+}
+.swiper-slide-next {
+  width: 21% !important;
+} */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.loginFormError {
+  font-size: 12px;
+  color: red;
+}
+.menu {
+  width: 0px;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 2rem;
+  right: 0;
+  /* overflow-x: hidden; */
+  transition: width 0.5s ease-in;
+}
+.navbar_button {
+  justify-content: center;
+  align-items: center;
+}
+.button_arrow {
+  display: none;
+}
+.navbar_button:hover > .button_arrow {
+  display: flex;
+  transition: 1s ease-in-out;
+}
